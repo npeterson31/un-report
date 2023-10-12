@@ -4,4 +4,4 @@ We plotted life expectancy over time.  You should know that each point represent
 
 Scatterplot of the data is saved to the figures subfolder.
 
-! (figures/gdpPercap_lifeExp.png)
+![](figures/gdpPercap_lifeExp.png)
