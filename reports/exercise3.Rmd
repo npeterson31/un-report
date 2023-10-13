@@ -1,0 +1,29 @@
+---
+title: "exercise3"
+author: "Natalie Peterson"
+date: "2023-10-13"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+library(tidyverse)
+library(here)
+
+options(scipen = 1000000)
+```
+
+```{r data, include = FALSE}
+gapminder_data <- read_csv(here("data/gapminder_data.csv"))
+```
+
+```{r scatterplot}
+ggplot(gapminder_data, aes(x = year, y = pop, group = country)) +
+  geom_line() + 
+    facet_wrap(vars(continent)) +
+
+  labs(x = "Year",
+    y = "Population",
+    title = "Population per Year")
+```
+
+
